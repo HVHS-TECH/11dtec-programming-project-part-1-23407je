@@ -35,6 +35,7 @@ if (Cash >= 20) {
         Cash += 1;
         document.getElementById('Cash').textContent = `$${Cash}`;
       }, 1000)
+      
 } else {
     console.log("You are too broke don't even try.")
 }
