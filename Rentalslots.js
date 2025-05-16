@@ -5,13 +5,14 @@ console.log("hello");
 
 
 //variables
-var PokerRent =(0);
-var BlackJackRent =(0);
-var SpinTheWheelRent =(0);
-var RouleteRent =(0);
-var CashSlotsRent =(0);
-var HorseRacingRent =(0);
-var Cash =(0);
+var PokerRent =0;
+var BlackJackRent =0;
+var SpinTheWheelRent =0;
+var RouleteRent =0;
+var CashSlotsRent =0;
+var HorseRacingRent =0;
+var Cash =0;
+var earningInterval;
 
 /****************************
  Main code
@@ -31,7 +32,7 @@ if (Cash >= 20) {
     clearInterval(earningInterval);
 
       earningInterval = setInterval(() => {
-        money += 1;
+        Cash += 1;
         document.getElementById('Cash').textContent = `$${Cash}`;
       }, 1000)
 } else {
