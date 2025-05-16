@@ -20,7 +20,8 @@ function start() {
 Cash = Cash + 1;
 console.log(Cash);
 }
-
+const startingMinutes = 10;
+let time = startingMinutes * 60;
 
 
 /****************************
@@ -32,4 +33,12 @@ if (Cash >= 20) {
 } else {
     console.log("You are too broke don't even try.")
 }
+}
+function updateCountdown() {
+    const minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+    let formattedSeconds = seconds < 10 ? '0' + seconds : seconds;
+
+    countdownEL.innerHTML = `${minutes}:${formattedSeconds}`;
+    time--;
 }
