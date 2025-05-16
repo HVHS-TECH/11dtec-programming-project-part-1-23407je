@@ -5,13 +5,13 @@ console.log("hello");
 
 
 //variables
-var Poker =(0);
-var BlackJack =(0);
-var SpinTheWheel =(0);
-var Roulete =(0);
-var CashSlots =(0);
-var HorseRacing =(0);
-var Cash =(0);
+var PokerRent =(0);
+var BlackJackRent =(0);
+var SpinTheWheelRent =(0);
+var RouleteRent =(0);
+var CashSlotsRent =(0);
+var HorseRacingRent =(0);
+var CashRent =(0);
 
 /****************************
  Main code
@@ -28,6 +28,7 @@ console.log(Cash);
 function Poker() {
 if (Cash >= 20) {
     console.log("30 second rental has started")
+    
 } else {
     console.log("You are too broke don't even try.")
 }
