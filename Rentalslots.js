@@ -12,10 +12,6 @@ var Roulete =(0);
 var CashSlots =(0);
 var HorseRacing =(0);
 var Cash =(0);
-const startingMinutes = 0.5;
-let time = startingMinutes * 60
-const countdownEL = document.getElementById('countdown');
-setInterval(updateCountdown, 1000);
 
 /****************************
  Main code
@@ -35,13 +31,4 @@ if (Cash >= 20) {
 } else {
     console.log("You are too broke don't even try.")
 }
-}
-function updateCountdown() {
-    const minutes = Math.floor(time / 60);
-    let seconds = time % 60;
-    let formattedSeconds = seconds < 10 ? '0' + seconds : seconds;
-
-    countdownEL.innerHTML = `${minutes}:${formattedSeconds}`;
-    time--;
-    time = time < 0 ? 0 : time; 
 }
