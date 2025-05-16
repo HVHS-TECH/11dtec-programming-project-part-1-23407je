@@ -12,6 +12,10 @@ var Roulete =(0);
 var CashSlots =(0);
 var HorseRacing =(0);
 var Cash =(0);
+const startingMinutes = 10;
+let time = startingMinutes * 60
+const countdownEL = document.getElementById('countdown');
+setInterval(updateCountdown, 1000);
 
 /****************************
  Main code
@@ -20,8 +24,6 @@ function start() {
 Cash = Cash + 1;
 console.log(Cash);
 }
-const startingMinutes = 10;
-let time = startingMinutes * 60;
 
 
 /****************************
