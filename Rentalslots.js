@@ -27,38 +27,43 @@ console.log(Cash);
 ****************************/
 function Poker() {
 if (Cash >= 20) {
-    console.log("30 second rental has started")
+    console.log("30 second rental has started");
 } else {
-    console.log("You are too broke don't even try.")
+    console.log("You are too broke don't even try.");
+}
 }
 function BlackJack() {
-if (Cash >= 20) {
-    console.log("30 second rental has started")
+if (Cash >= 100) {
+    console.log("45 second rental has started");
 } else {
-    console.log("You are too broke don't even try.")
+    console.log("You are too broke don't even try.");
+}
 }
 function SpinTheWheel() {
-if (Cash >= 20) {
-    console.log("30 second rental has started")
+if (Cash >= 1000) {
+    console.log("30 second rental has started");
 } else {
-    console.log("You are too broke don't even try.")
+    console.log("You are too broke don't even try.");
+}
 }
 function Roulette() {
-if (Cash >= 20) {
-    console.log("30 second rental has started")
+if (Cash >= 5000) {
+    console.log("1 minute rental has started");
 } else {
-    console.log("You are too broke don't even try.")
+    console.log("You are too broke don't even try.");
+}
 }
 function CashSlot() {
-if (Cash >= 20) {
-    console.log("30 second rental has started")
+if (Cash >= 25000) {
+    console.log("5 minutes rental has started");
 } else {
-    console.log("You are too broke don't even try.")
+    console.log("You are too broke don't even try.");
+}
 }
 function HorseRacing() {
-if (Cash >= 20) {
-    console.log("30 second rental has started")
+if (Cash >= 100000) {
+    console.log("20 minutes rental has started");
 } else {
-    console.log("You are too broke don't even try.")
+    console.log("You are too broke don't even try.");
 }
 }
