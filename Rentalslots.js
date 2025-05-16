@@ -11,7 +11,7 @@ var SpinTheWheelRent =(0);
 var RouleteRent =(0);
 var CashSlotsRent =(0);
 var HorseRacingRent =(0);
-var CashRent =(0);
+var Cash =(0);
 
 /****************************
  Main code
@@ -28,7 +28,12 @@ console.log(Cash);
 function Poker() {
 if (Cash >= 20) {
     console.log("30 second rental has started")
-    
+    clearInterval(earningInterval);
+
+      earningInterval = setInterval(() => {
+        money += 1;
+        document.getElementById('Cash').textContent = `$${Cash}`;
+      }, 1000)
 } else {
     console.log("You are too broke don't even try.")
 }
