@@ -43,4 +43,5 @@ function updateCountdown() {
 
     countdownEL.innerHTML = `${minutes}:${formattedSeconds}`;
     time--;
+    time = time < 0 ? 0 : time; 
 }
