@@ -24,9 +24,6 @@ console.log(Cash);
 if (timer == 30) {
     console.log("30 Second rent have finished.");
 }
-if (timer == 30) {
-clearInterval
-}
 
 /****************************
   Functions
