@@ -13,7 +13,7 @@ var CashSlotsRent =0;
 var HorseRacingRent =0;
 var Cash =0;
 var timer =0;
-let intervalID = setinterval(RentOne, 1000);
+let intervalID = setinterval(Poker, 1000);
 /****************************
  Main code
 ****************************/
@@ -21,18 +21,16 @@ function start() {
 Cash = Cash + 1;
 console.log(Cash);
 }
-if (timer == 30) {
-    console.log("30 Second rent have finished.");
-}
+if (intervalID == 1000) {
+   timer = timer + 1
+    }
+    if (timer == 30) {
+        
+    }
 
 /****************************
   Functions
 ****************************/
-function RentOne() {
-if (intervalID == 1000) {
-timer = timer + 1
-}
-}
 function Poker() {
 if (Cash >= 20) {
     console.log("30 second rental has started");
