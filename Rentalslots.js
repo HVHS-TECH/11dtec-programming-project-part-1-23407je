@@ -30,7 +30,6 @@ function Poker() {
 if (Cash >= 20) {
     console.log("30 second rental has started");
     Cash = Cash - 20
-    clearInterval(intervalID);
 } else {
     console.log("insufficient funds.");
 }
