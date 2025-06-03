@@ -26,7 +26,9 @@ console.log(Cash);
 /****************************
   Functions
 ****************************/
-
+function RentTimer() {
+    
+}
 function Poker() {
 if (Cash >= 20) {
     console.log("30 second rental has started");
