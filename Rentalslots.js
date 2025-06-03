@@ -21,7 +21,12 @@ function start() {
 Cash = Cash + 1;
 console.log(Cash);
 }
-
+if (timer == 30) {
+    console.log("30 Second rent have finished.");
+}
+if (timer == 30) {
+clearInterval
+}
 
 /****************************
   Functions
@@ -35,7 +40,6 @@ function Poker() {
 if (Cash >= 20) {
     console.log("30 second rental has started");
     Cash = Cash - 20
-    
 } else {
     console.log("insufficient funds.");
 }
