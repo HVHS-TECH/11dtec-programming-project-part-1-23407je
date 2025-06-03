@@ -12,7 +12,8 @@ var RouletteRent =0;
 var CashSlotsRent =0;
 var HorseRacingRent =0;
 var Cash =0;
-
+var timer =0;
+let intervalID = setinterval(RentOne, 1000);
 /****************************
  Main code
 ****************************/
@@ -25,45 +26,53 @@ console.log(Cash);
 /****************************
   Functions
 ****************************/
+function RentOne() {
+if (intervalID == 1000) {
+timer = timer + 1
+}
+}
 function Poker() {
 if (Cash >= 20) {
     console.log("30 second rental has started");
+    Cash = Cash - 20
+    
 } else {
-    console.log("You are too broke don't even try.");
+    console.log("insufficient funds.");
 }
 }
 function BlackJack() {
 if (Cash >= 100) {
     console.log("45 second rental has started");
 } else {
-    console.log("You are too broke don't even try.");
+    console.log("insufficient funds.");
 }
 }
 function SpinTheWheel() {
 if (Cash >= 1000) {
     console.log("30 second rental has started");
 } else {
-    console.log("You are too broke don't even try.");
+    console.log("insufficient funds.");
 }
 }
 function Roulette() {
 if (Cash >= 5000) {
     console.log("1 minute rental has started");
 } else {
-    console.log("You are too broke don't even try.");
+    console.log("insufficient funds.");
 }
 }
 function CashSlot() {
 if (Cash >= 25000) {
     console.log("5 minutes rental has started");
 } else {
-    console.log("You are too broke don't even try.");
+    console.log("insufficient funds.");
 }
 }
 function HorseRacing() {
 if (Cash >= 100000) {
     console.log("20 minutes rental has started");
+
 } else {
-    console.log("You are too broke don't even try.");
+    console.log("insufficient funds.");
 }
 }
