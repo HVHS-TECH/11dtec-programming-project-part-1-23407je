@@ -39,16 +39,16 @@ function rentTimer() {
     timer = timer + 1
     console.log("Seconds passed", timer)
    }
-   if (timer >= 30) {
-    checkertrue = 0;
-    timer = 0;
-    console.log("30 seconds passed. Rental ended.");
-  }
 }
 function poker() {
 if (Cash >= 20) {
     console.log("30 second rental has started");
     Cash = Cash - 20
+    if (timer >= 30) {
+    checkertrue = 0;
+    timer = 0;
+    console.log("30 seconds passed. Rental ended.");
+  }
 checkertrue = checkertrue + 1
 } else {
     console.log("insufficient funds.");
