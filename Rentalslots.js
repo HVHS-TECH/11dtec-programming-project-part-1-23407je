@@ -14,7 +14,9 @@ var HorseRacingRent =0;
 var Cash =0;
 var timer =0;
 var checkertrue =0;
-let intervalID = setinterval(rentTimer, 1000); 
+while (timer >=0) {
+    
+}
 /****************************
  Main code
 ****************************/
@@ -22,7 +24,11 @@ function start() {
 Cash = Cash + 1;
 console.log(Cash);
 }
-
+let intervalID = setInterval(() => {
+  if (checkerture == 1) {
+    rentTimer();
+  }
+}, 1000);
 
 /****************************
   Functions
