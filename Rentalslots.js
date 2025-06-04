@@ -37,7 +37,7 @@ let intervalID = setInterval(() => {
 function rentTimer() {
    if (checkertrue == 1) {
     timer = timer + 1
-    console.log("timer")
+    console.log("Seconds passed", timer)
    }
    if (timer >= 30) {
     checkertrue = 0;
