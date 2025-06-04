@@ -64,6 +64,7 @@ PokerRent = PokerRent + 1
 function blackJack() {
 if (Cash >= 100) {
     console.log("45 second rental has started");
+    checkertrue = checkertrue + 1
 } else {
     console.log("insufficient funds.");
 }
