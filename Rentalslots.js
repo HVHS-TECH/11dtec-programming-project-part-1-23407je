@@ -13,7 +13,7 @@ var CashSlotsRent =0;
 var HorseRacingRent =0;
 var Cash =0;
 var timer =0;
-var checkertrue =0;
+let checkertrue =0;
 /****************************
  Main code
 ****************************/
