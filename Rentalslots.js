@@ -23,10 +23,13 @@ while (timer >= 0 || timer <= 30) {
 /****************************
  Main code
 ****************************/
+
 function start() {
 Cash = Cash + 1;
 console.log(Cash);
 }
+
+//timerintervals
 let intervalID = setInterval(() => {
   if (checkerture == 1) {
     rentTimer();
