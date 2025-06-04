@@ -28,7 +28,6 @@ console.log(Cash);
 ****************************/
 function rentTimer() {
 if (intervalID == 1000) {
-   console.log("it has been 1 second");
    timer = timer + 1
 }
 }
@@ -36,7 +35,7 @@ function poker() {
 if (Cash >= 20) {
     console.log("30 second rental has started");
     Cash = Cash - 20
-    
+
 } else {
     console.log("insufficient funds.");
 }
