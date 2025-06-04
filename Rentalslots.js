@@ -7,6 +7,7 @@ console.log("hello");
 //variables
 var PokerRent = 0;
 var BlackJackRent = 0;
+var BlackJackChecker =0;
 var SpinTheWheelRent = 0;
 var RouletteRent = 0;
 var CashSlotsRent = 0;
@@ -39,11 +40,17 @@ function rentTimer() {
     timer = timer + 1
     console.log("Seconds passed", timer)
    }
-   if (timer >= 30) {
+   if (timer >= 30 && PokerRent >= 1) {
     checkertrue = 0;
     timer = 0;
     console.log("30 seconds passed. Rental ended.");
     Cash = Cash + 25
+  }
+    if (timer >= 30 && BlackJackChecker >= 1) {
+    checkertrue = 0;
+    timer = 0;
+    console.log("30 seconds passed. Rental ended.");
+    Cash = Cash + 150
   }
 }
 function poker() {
@@ -57,14 +64,14 @@ PokerRent = PokerRent + 1
 }
    if (checkertrue >= 2) {
         checkertrue = checkertrue - checkertrue
-        console.log("you can only buy one poker set at a timer")
+        console.log("you can only rent one item at a time")
         timer = timer - timer
     }
 }
 function blackJack() {
 if (Cash >= 100) {
     console.log("45 second rental has started");
-    checkertrue = checkertrue + 1
+    BlackJackChecker = BlackJackChecker + 1
 } else {
     console.log("insufficient funds.");
 }
