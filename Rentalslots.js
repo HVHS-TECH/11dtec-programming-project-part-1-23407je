@@ -35,7 +35,7 @@ let intervalID = setInterval(() => {
   Functions
 ****************************/
 function rentTimer() {
-   if (secondChecker == 1) {
+   if (checkertrue == 1) {
     timer = timer + 1
     console.log("timer")
    }
