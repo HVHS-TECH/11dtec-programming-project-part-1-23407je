@@ -38,6 +38,7 @@ function rentTimer() {
    if (checkertrue == 1 && PokerRent == 1) {
     timer = timer + 1
     console.log("Seconds passed", timer)
+    Cash = Cash + 1
    }
    if (timer >= 30) {
     checkertrue = 0;
@@ -59,9 +60,6 @@ PokerRent = PokerRent + 1
         console.log("you can only buy one poker set at a timer")
         timer = timer - timer
     }
-}
-function pokermoney() {
-    
 }
 function blackJack() {
 if (Cash >= 100) {
