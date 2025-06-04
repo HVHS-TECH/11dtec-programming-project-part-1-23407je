@@ -39,6 +39,7 @@ while (timer == 30) {
 function rentTimer() {
    if (secondChecker == 1) {
     timer = timer + 1
+    console.log("timer")
    }
 }
 function poker() {
