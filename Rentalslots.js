@@ -13,6 +13,7 @@ var CashSlotsRent =0;
 var HorseRacingRent =0;
 var Cash =0;
 var timer =0;
+var secondChecker =0;
 var checkertrue =0;
 let intervalID = setinterval(rentTimer, 1000);
 /****************************
@@ -23,17 +24,22 @@ Cash = Cash + 1;
 console.log(Cash);
 }
 while (checkertrue == 1) {
-   
+   secondChecker = 1
 }
 while (checkertrue == 0) {
      clearInterval(intervalID)
+}
+while (timer == 30) {
+    checkertrue = 0
 }
 
 /****************************
   Functions
 ****************************/
 function rentTimer() {
-   if
+   if (secondChecker == 1) {
+    timer = timer + 1
+   }
 }
 function poker() {
 if (Cash >= 20) {
