@@ -23,14 +23,17 @@ Cash = Cash + 1;
 console.log(Cash);
 }
 while (checkertrue == 1) {
-    
+   
+}
+while (checkertrue == 0) {
+     clearInterval(intervalID)
 }
 
 /****************************
   Functions
 ****************************/
 function rentTimer() {
-   timer = timer + 1
+   if
 }
 function poker() {
 if (Cash >= 20) {
