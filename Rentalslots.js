@@ -5,15 +5,16 @@ console.log("hello");
 
 
 //variables
-var PokerRent =0;
-var BlackJackRent =0;
-var SpinTheWheelRent =0;
-var RouletteRent =0;
-var CashSlotsRent =0;
-var HorseRacingRent =0;
-var Cash =0;
-var timer =0;
-let checkertrue =0;
+var PokerRent = 0;
+var BlackJackRent = 0;
+var SpinTheWheelRent = 0;
+var RouletteRent = 0;
+var CashSlotsRent = 0;
+var HorseRacingRent = 0;
+var Cash = 0;
+var timer = 0;
+var checkertrue = 0;
+
 /****************************
  Main code
 ****************************/
@@ -25,7 +26,7 @@ console.log(Cash);
 
 //timerintervals
 let intervalID = setInterval(() => {
-  if (checkerture == 1) {
+  if (checkertrue == 1) {
     rentTimer();
   }
 }, 1000);
