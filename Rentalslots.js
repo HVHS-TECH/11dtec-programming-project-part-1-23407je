@@ -27,9 +27,7 @@ console.log(Cash);
   Functions
 ****************************/
 function rentTimer() {
-if (intervalID == 1000) {
    timer = timer + 1
-}
 }
 function poker() {
 if (Cash >= 20) {
