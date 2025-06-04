@@ -22,13 +22,13 @@ function start() {
 Cash = Cash + 1;
 console.log(Cash);
 }
-
+while (checkertrue == 1) {
+    
+}
 
 /****************************
   Functions
 ****************************/
-
-}
 function rentTimer() {
    timer = timer + 1
 }
