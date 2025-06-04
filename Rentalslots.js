@@ -54,6 +54,11 @@ PokerRent = PokerRent + 1
 } else {
     console.log("insufficient funds.");
 }
+   if (checkertrue >= 2) {
+        checkertrue = checkertrue - checkertrue
+        console.log("you can only buy one poker set at a timer")
+        timer = timer - timer
+    }
 }
 function blackJack() {
 if (Cash >= 100) {
