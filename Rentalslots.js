@@ -13,6 +13,7 @@ var CashSlotsRent =0;
 var HorseRacingRent =0;
 var Cash =0;
 var timer =0;
+var checkertrue =0;
 let intervalID = setinterval(rentTimer, 1000);
 /****************************
  Main code
@@ -26,6 +27,11 @@ console.log(Cash);
 /****************************
   Functions
 ****************************/
+function checker() {
+  if (checkertrue = 1) {
+    
+  }
+}
 function rentTimer() {
    timer = timer + 1
 }
@@ -33,7 +39,7 @@ function poker() {
 if (Cash >= 20) {
     console.log("30 second rental has started");
     Cash = Cash - 20
-
+checkertrue = checkertrue + 1
 } else {
     console.log("insufficient funds.");
 }
