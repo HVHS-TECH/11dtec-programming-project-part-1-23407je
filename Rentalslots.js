@@ -38,12 +38,12 @@ function rentTimer() {
    if (checkertrue == 1 && PokerRent == 1) {
     timer = timer + 1
     console.log("Seconds passed", timer)
-    Cash = Cash + 1
    }
    if (timer >= 30) {
     checkertrue = 0;
     timer = 0;
     console.log("30 seconds passed. Rental ended.");
+    Cash = Cash + 25
   }
 }
 function poker() {
