@@ -14,8 +14,11 @@ var HorseRacingRent =0;
 var Cash =0;
 var timer =0;
 var checkertrue =0;
-while (timer >=0) {
-    
+while (timer >= 0 || timer <= 30) {
+    if (timer == 30) {
+        checkertrue = checkertrue - 1
+        timer = timer - 30
+    }
 }
 /****************************
  Main code
