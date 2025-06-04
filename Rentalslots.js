@@ -24,13 +24,13 @@ Cash = Cash + 1;
 console.log(Cash);
 }
 while (checkertrue == 1) {
-   secondChecker = 1
+   secondChecker == 1
 }
 while (checkertrue == 0) {
      clearInterval(intervalID)
 }
 while (timer == 30) {
-    checkertrue = 0
+    checkertrue == 0
 }
 
 /****************************
