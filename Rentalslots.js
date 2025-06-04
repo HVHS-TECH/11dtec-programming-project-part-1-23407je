@@ -35,7 +35,7 @@ let intervalID = setInterval(() => {
   Functions
 ****************************/
 function rentTimer() {
-   if (checkertrue == 1 && PokerRent >= 1) {
+   if (checkertrue == 1 && PokerRent == 1) {
     timer = timer + 1
     console.log("Seconds passed", timer)
    }
@@ -59,6 +59,9 @@ PokerRent = PokerRent + 1
         console.log("you can only buy one poker set at a timer")
         timer = timer - timer
     }
+}
+function pokermoney() {
+    
 }
 function blackJack() {
 if (Cash >= 100) {
