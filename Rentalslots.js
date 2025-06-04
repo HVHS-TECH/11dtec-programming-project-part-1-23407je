@@ -27,10 +27,7 @@ console.log(Cash);
 /****************************
   Functions
 ****************************/
-function checker() {
-  if (checkertrue = 1) {
-    
-  }
+
 }
 function rentTimer() {
    timer = timer + 1
